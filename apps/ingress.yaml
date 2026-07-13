@@ -1,0 +1,49 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bidly
+  namespace: bidly
+  annotations:
+    alb.ingress.kubernetes.io/load-balancer-name: bidly
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+spec:
+  ingressClassName: alb
+  rules:
+    - http:
+        paths:
+          - path: /api/auth
+            pathType: Prefix
+            backend:
+              service:
+                name: auth
+                port:
+                  name: http
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: auction
+                port:
+                  name: http
+          - path: /auth
+            pathType: Prefix
+            backend:
+              service:
+                name: auth-frontend
+                port:
+                  name: http
+          - path: /auction
+            pathType: Prefix
+            backend:
+              service:
+                name: auction-frontend
+                port:
+                  name: http
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: auction-frontend
+                port:
+                  name: http

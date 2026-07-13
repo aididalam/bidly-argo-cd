@@ -8,7 +8,6 @@ resources:
   - apps/auction-api/service.yaml
   - apps/auth-frontend/deployment.yaml
   - apps/auth-frontend/service.yaml
-  - apps/auth-frontend/ingress.yaml
   - apps/auction-frontend/deployment.yaml
   - apps/auction-frontend/service.yaml
-  - apps/auction-frontend/ingress.yaml
+  - apps/ingress.yaml
