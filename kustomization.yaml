@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - namespace.yaml
+  - apps/auth-api/deployment.yaml
+  - apps/auth-api/service.yaml
+  - apps/auction-api/deployment.yaml
+  - apps/auction-api/service.yaml
+  - apps/auth-frontend/deployment.yaml
+  - apps/auth-frontend/service.yaml
+  - apps/auction-frontend/deployment.yaml
+  - apps/auction-frontend/service.yaml
