@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: aididalam/bidly-auth:main-1
+          image: aididalam/bidly-auth:main-2
           ports:
             - containerPort: 8081
               name: http
