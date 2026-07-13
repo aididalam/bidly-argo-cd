@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: auction
-          image: aididalam/bidly-auction:main-0
+          image: aididalam/bidly-auction:main-1
           ports:
             - containerPort: 8082
               name: http
