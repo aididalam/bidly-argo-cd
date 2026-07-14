@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: auth-frontend
-          image: aididalam/bidly-frontend-auth:main-3
+          image: aididalam/bidly-frontend-auth:main-4
           ports:
             - containerPort: 80
               name: http
