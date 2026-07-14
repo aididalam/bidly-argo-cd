@@ -4,6 +4,7 @@ resources:
   - apps/mysql/deployment.yaml
   - apps/mysql/service.yaml
   - apps/mysql/init-job.yaml
+  - apps/demo-seed-job.yaml
   - apps/auth-api/deployment.yaml
   - apps/auth-api/service.yaml
   - apps/auction-api/deployment.yaml
