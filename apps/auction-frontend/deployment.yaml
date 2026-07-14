@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: auction-frontend
-          image: aididalam/bidly-frontend-auction:main-6
+          image: aididalam/bidly-frontend-auction:main-7
           env:
             - name: S3_PUBLIC_BASE_URL
               valueFrom:
