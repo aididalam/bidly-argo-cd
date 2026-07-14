@@ -13,6 +13,7 @@ spec:
       labels:
         app.kubernetes.io/name: auction
     spec:
+      serviceAccountName: auction-s3
       containers:
         - name: auction
           image: aididalam/bidly-auction:main-2
