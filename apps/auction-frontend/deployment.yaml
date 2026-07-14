@@ -16,6 +16,12 @@ spec:
       containers:
         - name: auction-frontend
           image: aididalam/bidly-frontend-auction:main-4
+          env:
+            - name: S3_PUBLIC_BASE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: bidly-s3
+                  key: S3_PUBLIC_BASE_URL
           ports:
             - containerPort: 80
               name: http
