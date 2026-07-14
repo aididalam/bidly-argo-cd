@@ -16,7 +16,7 @@ spec:
       serviceAccountName: auction-s3
       containers:
         - name: auction
-          image: aididalam/bidly-auction:main-4
+          image: aididalam/bidly-auction:main-5
           ports:
             - containerPort: 8082
               name: http
