@@ -21,7 +21,7 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: bidly-s3
-                  key: S3_PUBLIC_BASE_URL
+                  key: s3-public-base-url
           ports:
             - containerPort: 80
               name: http
