@@ -35,10 +35,12 @@ spec:
             - name: JWT_EXPIRY
               value: 24h
           readinessProbe:
-            tcpSocket:
+            httpGet:
+              path: /healthz
               port: http
           livenessProbe:
-            tcpSocket:
+            httpGet:
+              path: /healthz
               port: http
           resources:
             requests:

@@ -66,10 +66,12 @@ spec:
             - name: S3_USE_PATH_STYLE
               value: "true"
           readinessProbe:
-            tcpSocket:
+            httpGet:
+              path: /healthz
               port: http
           livenessProbe:
-            tcpSocket:
+            httpGet:
+              path: /healthz
               port: http
           resources:
             requests:
