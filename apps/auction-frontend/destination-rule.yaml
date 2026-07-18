@@ -1,0 +1,14 @@
+apiVersion: networking.istio.io/v1
+kind: DestinationRule
+metadata:
+  name: auction-frontend
+  namespace: bidly
+spec:
+  host: auction-frontend
+  subsets:
+    - name: v9
+      labels:
+        app.kubernetes.io/version: v9
+    - name: v10
+      labels:
+        app.kubernetes.io/version: v10

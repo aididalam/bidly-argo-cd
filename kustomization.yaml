@@ -8,5 +8,8 @@ resources:
   - apps/auth-frontend/deployment.yaml
   - apps/auth-frontend/service.yaml
   - apps/auction-frontend/deployment.yaml
+  - apps/auction-frontend/deployment-v9.yaml
   - apps/auction-frontend/service.yaml
+  - apps/auction-frontend/destination-rule.yaml
+  - apps/auction-frontend/virtual-service.yaml
   - apps/ingress.yaml

@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: auction-frontend-latest
+  name: auction-frontend-v9
   namespace: bidly
   labels:
     app.kubernetes.io/name: auction-frontend
