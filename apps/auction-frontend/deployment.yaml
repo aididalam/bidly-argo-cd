@@ -5,7 +5,7 @@ metadata:
   namespace: bidly
   labels:
     app.kubernetes.io/name: auction-frontend
-    app.kubernetes.io/version: v8
+    app.kubernetes.io/version: v9
 spec:
   replicas: 2
   selector:
@@ -15,11 +15,11 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: auction-frontend
-        app.kubernetes.io/version: v8
+        app.kubernetes.io/version: v9
     spec:
       containers:
         - name: auction-frontend
-          image: aididalam/bidly-frontend-auction:main-8
+          image: aididalam/bidly-frontend-auction:main-9
           env:
             - name: S3_PUBLIC_BASE_URL
               valueFrom:
