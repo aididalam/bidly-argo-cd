@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: auction
   namespace: bidly
+  labels:
+    app.kubernetes.io/name: auction
+    app.kubernetes.io/version: main-6
 spec:
   replicas: 2
   selector:
@@ -12,6 +15,7 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: auction
+        app.kubernetes.io/version: main-6
     spec:
       serviceAccountName: auction-s3
       containers:

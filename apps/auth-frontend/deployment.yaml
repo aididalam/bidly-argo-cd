@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: auth-frontend
   namespace: bidly
+  labels:
+    app.kubernetes.io/name: auth-frontend
+    app.kubernetes.io/version: main-4
 spec:
   replicas: 2
   selector:
@@ -12,6 +15,7 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: auth-frontend
+        app.kubernetes.io/version: main-4
     spec:
       containers:
         - name: auth-frontend
