@@ -5,7 +5,7 @@ metadata:
   namespace: bidly
   labels:
     app.kubernetes.io/name: auth
-    app.kubernetes.io/version: v6
+    app.kubernetes.io/version: v7
 spec:
   replicas: 2
   selector:
@@ -15,11 +15,11 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: auth
-        app.kubernetes.io/version: v6
+        app.kubernetes.io/version: v7
     spec:
       containers:
         - name: auth
-          image: aididalam/bidly-auth:main-6
+          image: aididalam/bidly-auth:main-7
           ports:
             - containerPort: 8081
               name: http
