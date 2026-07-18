@@ -5,7 +5,7 @@ metadata:
   namespace: bidly
   labels:
     app.kubernetes.io/name: auth-frontend
-    app.kubernetes.io/version: main-4
+    app.kubernetes.io/version: main-5
 spec:
   replicas: 2
   selector:
@@ -15,11 +15,11 @@ spec:
     metadata:
       labels:
         app.kubernetes.io/name: auth-frontend
-        app.kubernetes.io/version: main-4
+        app.kubernetes.io/version: main-5
     spec:
       containers:
         - name: auth-frontend
-          image: aididalam/bidly-frontend-auth:main-4
+          image: aididalam/bidly-frontend-auth:main-5
           ports:
             - containerPort: 80
               name: http
