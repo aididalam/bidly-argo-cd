@@ -11,8 +11,8 @@ spec:
         - destination:
             host: auction-frontend
             subset: v9
-          weight: 100
+          weight: 50
         - destination:
             host: auction-frontend
             subset: v11
-          weight: 0
+          weight: 50
